@@ -1,0 +1,25 @@
+{
+  "siteName": "kyo",
+  "appType": "website",
+  "search": "Search",
+  "jlpt": "JLPT",
+  "subject": {
+    "kanji": "kanji",
+    "mean": "vocabulary"
+  },
+  "homepage": {
+    "title": "Learn japanese with Kyo",
+    "description": "Learn japanese a little every day"
+  },
+  "postListPage": {
+    "title": "List of post",
+    "description": "Learn japanese a little every day"
+  },
+  "welcome": "Wellcome",
+  "logout":"Logout",
+  "saySomething":"How are you today 💪📖!",
+  "postKanjiTitle":"Kanji of week" ,
+  "postMeanTitle":"Vocabulary of week" ,
+  "more": "More from this thread",
+  "day":"day"
+}
