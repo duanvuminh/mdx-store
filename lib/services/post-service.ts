@@ -2,7 +2,7 @@ import { TYPES } from "@/lib/const";
 import { myContainer } from "@/lib/inversify.config";
 import { PostViewModel } from "@/lib/models/view-model";
 import { IPostRepository } from "@/lib/repository/post-repository";
-import { Content } from "../models/model";
+import { Content } from "@/lib/models/model";
 
 export const postService = {
   getPost: async ({
@@ -31,6 +31,7 @@ export const postService = {
     updateDateTime,
     tags,
     hanTu,
+    postType
   }: {
     id: string;
     mdxContent: Content;
@@ -38,6 +39,7 @@ export const postService = {
     updateDateTime: Content;
     tags: string;
     hanTu: Content;
+    postType: string;
   }): Promise<void> => {
     const postRepository = myContainer.get<IPostRepository>(
       TYPES.IPostRepository

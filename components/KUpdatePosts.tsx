@@ -31,6 +31,9 @@ export function KUpdatePosts() {
         ...metadata.ja.frontmatter.tags.split(","),
         ...metadata.vi.frontmatter.tags.split(","),
       ].filter(onlyUnique).join(",");
+
+      const postType = metadata.en.frontmatter.postType;
+
       const mediaUrl: Content = {
         en: metadata.en.frontmatter.mediaUrl,
         vi: metadata.vi.frontmatter.mediaUrl,
@@ -54,7 +57,7 @@ export function KUpdatePosts() {
         vi: viCt,
         ja: jaCt,
       };
-      postService.updatePost({ id, mdxContent, updateDateTime, mediaUrl,tags,hanTu });
+      postService.updatePost({ id, mdxContent, updateDateTime, mediaUrl,tags,hanTu,postType });
     }
   }
   async function onSubmitSort(formData: FormData) {

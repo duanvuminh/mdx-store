@@ -18,6 +18,7 @@ export class AngoliaRepository implements IPostRepository {
     updateDateTime,
     tags,
     hanTu,
+    postType
   }: {
     id: string;
     mdxContent: Content;
@@ -25,6 +26,7 @@ export class AngoliaRepository implements IPostRepository {
     updateDateTime: Content;
     tags: string;
     hanTu: Content;
+    postType: string;
   }): Promise<void> {
     return indexAngolia.product.partialUpdateObject({
       mdxContent,
@@ -32,7 +34,8 @@ export class AngoliaRepository implements IPostRepository {
       updateDateTime,
       objectID: id,
       tags:tags,
-      hanTu: hanTu
+      hanTu: hanTu,
+      postType: postType
     });
   }
   updateSort(postID: string, sort: number): Promise<void> {
