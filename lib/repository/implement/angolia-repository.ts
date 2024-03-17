@@ -1,6 +1,6 @@
 import { injectable } from "inversify";
 
-import { PostDetailModel, PostBaseModel, MdxContent } from "@/lib/models/model";
+import { PostDetailModel, PostBaseModel, Content } from "@/lib/models/model";
 import { IPostRepository } from "@/lib/repository/post-repository";
 
 const algoliasearch = require("algoliasearch");
@@ -11,9 +11,33 @@ const indexAngolia = {
 
 @injectable()
 export class AngoliaRepository implements IPostRepository {
-  updateMdx(postID: string, mdxContent: MdxContent): Promise<void> {
+  updateFromMdx({
+    id,
+    mdxContent,
+    mediaUrl,
+    updateDateTime,
+    tags,
+    hanTu,
+  }: {
+    id: string;
+    mdxContent: Content;
+    mediaUrl: Content;
+    updateDateTime: Content;
+    tags: string;
+    hanTu: Content;
+  }): Promise<void> {
     return indexAngolia.product.partialUpdateObject({
-      mdxContent: mdxContent,
+      mdxContent,
+      mediaUrl,
+      updateDateTime,
+      objectID: id,
+      tags:tags,
+      hanTu: hanTu
+    });
+  }
+  updateSort(postID: string, sort: number): Promise<void> {
+    return indexAngolia.product.partialUpdateObject({
+      sort: sort,
       objectID: postID
     });
   }

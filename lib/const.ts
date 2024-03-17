@@ -10,6 +10,7 @@ export const TYPES = {
   IPostRepository : Symbol.for("IPostRepository"),
   IAuthRepository : Symbol.for("IAuthRepository"),
   IApi : Symbol.for("IApi"),
+  IMdxService:  Symbol.for("IMdxService"),
 };
 export const csDays = 28;
 export const csKToken = "kToken" ;

@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-const postsDirectory = path.join(process.cwd(), "lib");
+const postsDirectory = path.join(process.cwd(), "mdx");
 
 export const fileService = {
   getContent: (lang: string, id: string) => {

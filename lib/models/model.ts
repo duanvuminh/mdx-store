@@ -21,7 +21,7 @@ export interface MdxModel {
   content: string;
 }
 
-export interface MdxContent {
+export interface Content {
   en: string;
   vi: string;
   ja:string;

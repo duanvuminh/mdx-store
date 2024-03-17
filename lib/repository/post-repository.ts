@@ -1,4 +1,4 @@
-import { MdxContent, PostBaseModel, PostDetailModel } from "@/lib/models/model";
+import { Content, PostBaseModel, PostDetailModel } from "@/lib/models/model";
 
 export interface IPostRepository {
   getPost(
@@ -6,7 +6,22 @@ export interface IPostRepository {
     lang: string,
     attributesToRetrieve: string[]
   ): Promise<PostDetailModel>;
-  updateMdx(postID: string, mdxContent: MdxContent): Promise<void>;
+  updateFromMdx({
+    id,
+    mdxContent,
+    mediaUrl,
+    updateDateTime,
+    tags,
+    hanTu,
+  }: {
+    id: string;
+    mdxContent: Content;
+    mediaUrl: Content;
+    updateDateTime: Content;
+    tags: string;
+    hanTu: Content;
+  }): Promise<void>;
+  updateSort(postID: string, sort: number): Promise<void>;
   getPosts(
     lang: string,
     posts: string[],
