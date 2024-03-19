@@ -78,7 +78,7 @@ export function KUpdatePosts() {
     const postIds = formData.get("ids")?.toString().split("@") ?? [];
     for (let index = 0; index < postIds.length; index++) {
       const id = postIds[index];
-      const obj = postService.addPost(id);
+      postService.addPost(id);
     }
   }
   return (

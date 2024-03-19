@@ -15,7 +15,10 @@ export class AngoliaRepository implements IPostRepository {
     return indexAngolia.product.getObject(id)
   }
   addPost(post: any): Promise<void> {
-    return indexAngolia.product.saveObject(post)
+    return indexAngolia.product.saveObject(post,{
+      autoGenerateObjectIDIfNotExist: true
+      // Any other requestOptions
+    })
   }
   updateFromMdx({
     id,
