@@ -11,6 +11,12 @@ const indexAngolia = {
 
 @injectable()
 export class AngoliaRepository implements IPostRepository {
+  getPostFull(id: string): Promise<void> {
+    return indexAngolia.product.getObject(id)
+  }
+  addPost(post: any): Promise<void> {
+    return indexAngolia.product.saveObject(post)
+  }
   updateFromMdx({
     id,
     mdxContent,
@@ -24,7 +30,7 @@ export class AngoliaRepository implements IPostRepository {
     mdxContent: Content;
     mediaUrl: Content;
     updateDateTime: Content;
-    tags: string;
+    tags: string[];
     hanTu: Content;
     postType: string;
   }): Promise<void> {
@@ -33,7 +39,7 @@ export class AngoliaRepository implements IPostRepository {
       mediaUrl,
       updateDateTime,
       objectID: id,
-      tags:tags,
+      _tags:tags,
       hanTu: hanTu,
       postType: postType
     });

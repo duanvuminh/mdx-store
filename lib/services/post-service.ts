@@ -1,8 +1,8 @@
 import { TYPES } from "@/lib/const";
 import { myContainer } from "@/lib/inversify.config";
+import { Content } from "@/lib/models/model";
 import { PostViewModel } from "@/lib/models/view-model";
 import { IPostRepository } from "@/lib/repository/post-repository";
-import { Content } from "@/lib/models/model";
 
 export const postService = {
   getPost: async ({
@@ -31,13 +31,13 @@ export const postService = {
     updateDateTime,
     tags,
     hanTu,
-    postType
+    postType,
   }: {
     id: string;
     mdxContent: Content;
     mediaUrl: Content;
     updateDateTime: Content;
-    tags: string;
+    tags: string[];
     hanTu: Content;
     postType: string;
   }): Promise<void> => {
@@ -66,5 +66,14 @@ export const postService = {
     );
     const post = postRepository.updateSort(id, sort);
     return post;
+  },
+  addPost: async (postId: string) => {
+    const postRepository = myContainer.get<IPostRepository>(
+      TYPES.IPostRepository
+    );
+    const post = await postRepository.getPostFull(postId);
+    delete post.content;
+    delete post.tags;
+    postRepository.addPost({ post });
   },
 };

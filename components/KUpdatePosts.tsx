@@ -23,14 +23,14 @@ export function KUpdatePosts() {
         vi: await mdxService.readMdx({ content: viCt }),
         ja: await mdxService.readMdx({ content: jaCt }),
       };
-      const onlyUnique = (value:string, index:number, array: string[])=> {
+      const onlyUnique = (value: string, index: number, array: string[]) => {
         return array.indexOf(value) === index;
-      }
+      };
       const tags = [
         ...metadata.en.frontmatter.tags.split(","),
         ...metadata.ja.frontmatter.tags.split(","),
         ...metadata.vi.frontmatter.tags.split(","),
-      ].filter(onlyUnique).join(",");
+      ].filter(onlyUnique);
 
       const postType = metadata.en.frontmatter.postType;
 
@@ -57,13 +57,29 @@ export function KUpdatePosts() {
         vi: viCt,
         ja: jaCt,
       };
-      postService.updatePost({ id, mdxContent, updateDateTime, mediaUrl,tags,hanTu,postType });
+      postService.updatePost({
+        id,
+        mdxContent,
+        updateDateTime,
+        mediaUrl,
+        tags,
+        hanTu,
+        postType,
+      });
     }
   }
   async function onSubmitSort(formData: FormData) {
     "use server";
     const [id, sort] = formData.get("ids")?.toString().split("@") ?? [];
     postService.updatePostSort({ id, sort: Number(sort) });
+  }
+  async function onSubmitFormat(formData: FormData) {
+    "use server";
+    const postIds = formData.get("ids")?.toString().split("@") ?? [];
+    for (let index = 0; index < postIds.length; index++) {
+      const id = postIds[index];
+      const obj = postService.addPost(id);
+    }
   }
   return (
     <ul className="space-y-4">
@@ -80,6 +96,14 @@ export function KUpdatePosts() {
           <div className="flex w-full max-w-sm items-center space-x-2">
             <Input placeholder="post id with name@sort" name="ids" />
             <Button type="submit">Update sort</Button>
+          </div>
+        </form>
+      </li>
+      <li>
+        <form action={onSubmitFormat}>
+          <div className="flex w-full max-w-sm items-center space-x-2">
+            <Input placeholder="post id with @" name="ids" />
+            <Button type="submit">Format object</Button>
           </div>
         </form>
       </li>
