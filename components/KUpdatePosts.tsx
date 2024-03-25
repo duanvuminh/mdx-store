@@ -27,9 +27,9 @@ export function KUpdatePosts() {
         return array.indexOf(value) === index;
       };
       const tags = [
-        ...metadata.en.frontmatter.tags.split(","),
-        ...metadata.ja.frontmatter.tags.split(","),
-        ...metadata.vi.frontmatter.tags.split(","),
+        ...metadata.en.frontmatter.tags?.split(",")??[],
+        ...metadata.ja.frontmatter.tags?.split(",")??[],
+        ...metadata.vi.frontmatter.tags?.split(",")??[],
       ].filter(onlyUnique);
 
       const postType = metadata.en.frontmatter.postType;
@@ -47,9 +47,9 @@ export function KUpdatePosts() {
       };
 
       const hanTu: Content = {
-        en: metadata.en.frontmatter.hanTu,
-        vi: metadata.vi.frontmatter.hanTu,
-        ja: metadata.ja.frontmatter.hanTu,
+        en: metadata.en.frontmatter?.hanTu,
+        vi: metadata.vi.frontmatter?.hanTu,
+        ja: metadata.ja.frontmatter?.hanTu,
       };
 
       const mdxContent: Content = {
