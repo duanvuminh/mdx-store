@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { TYPES } from "@/lib/const";
 import { myContainer } from "@/lib/inversify.config";
-import { Content } from "@/lib/models/model";
+import { Content, Seo } from "@/lib/models/model";
 import { fileService } from "@/lib/services/file-service";
 import { IMdxService } from "@/lib/services/interface";
 import { postService } from "@/lib/services/post-service";
@@ -24,15 +24,16 @@ export function KUpdatePosts() {
         ja: await mdxService.readMdx({ content: jaCt }),
       };
       const onlyUnique = (value: string, index: number, array: string[]) => {
-        return array.indexOf(value) === index;
+        return array.indexOf(value) === index && (value.trim()!= "");
       };
       const tags = [
-        ...metadata.en.frontmatter.tags?.split(",")??[],
-        ...metadata.ja.frontmatter.tags?.split(",")??[],
-        ...metadata.vi.frontmatter.tags?.split(",")??[],
+        ...(metadata.en.frontmatter.tags?.split(",") ?? []),
+        ...(metadata.ja.frontmatter.tags?.split(",") ?? []),
+        ...(metadata.vi.frontmatter.tags?.split(",") ?? []),
       ].filter(onlyUnique);
 
       const postType = metadata.en.frontmatter.postType;
+      const level = metadata.en.frontmatter.level;
 
       const mediaUrl: Content = {
         en: metadata.en.frontmatter.mediaUrl,
@@ -57,6 +58,27 @@ export function KUpdatePosts() {
         vi: viCt,
         ja: jaCt,
       };
+
+      const title = [
+        metadata.en.frontmatter.title,
+        metadata.ja.frontmatter.title,
+        metadata.vi.frontmatter.title,
+      ].filter(onlyUnique).toString();
+      const description = [
+        metadata.en.frontmatter.description,
+        metadata.ja.frontmatter.description,
+        metadata.vi.frontmatter.description,
+      ].filter(onlyUnique).toString();
+      const keywords = [
+        ...metadata.en.frontmatter.keywords.split(","),
+        ...metadata.ja.frontmatter.keywords.split(","),
+        ...metadata.vi.frontmatter.keywords.split(","),
+      ].filter(onlyUnique);
+      const seo: Seo = {
+        title: title,
+        description: description,
+        keywords: keywords,
+      };
       postService.updatePost({
         id,
         mdxContent,
@@ -65,6 +87,8 @@ export function KUpdatePosts() {
         tags,
         hanTu,
         postType,
+        level,
+        seo,
       });
     }
   }

@@ -1,8 +1,13 @@
-import { Content, PostBaseModel, PostDetailModel } from "@/lib/models/model";
+import {
+  Content,
+  PostBaseModel,
+  PostDetailModel,
+  Seo,
+} from "@/lib/models/model";
 
 export interface IPostRepository {
-  addPost(post:any): Promise<void>;
-  getPostFull(id:string): Promise<any>;
+  addPost(post: any): Promise<void>;
+  getPostFull(id: string): Promise<any>;
   getPost(
     postID: string,
     lang: string,
@@ -15,6 +20,9 @@ export interface IPostRepository {
     updateDateTime,
     tags,
     hanTu,
+    postType,
+    level,
+    seo,
   }: {
     id: string;
     mdxContent: Content;
@@ -22,6 +30,9 @@ export interface IPostRepository {
     updateDateTime: Content;
     tags: string[];
     hanTu: Content;
+    postType: string;
+    level: string;
+    seo: Seo;
   }): Promise<void>;
   updateSort(postID: string, sort: number): Promise<void>;
   getPosts(

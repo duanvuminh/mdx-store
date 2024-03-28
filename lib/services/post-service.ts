@@ -1,6 +1,6 @@
 import { TYPES } from "@/lib/const";
 import { myContainer } from "@/lib/inversify.config";
-import { Content } from "@/lib/models/model";
+import { Content, Seo } from "@/lib/models/model";
 import { PostViewModel } from "@/lib/models/view-model";
 import { IPostRepository } from "@/lib/repository/post-repository";
 
@@ -32,6 +32,8 @@ export const postService = {
     tags,
     hanTu,
     postType,
+    level,
+    seo
   }: {
     id: string;
     mdxContent: Content;
@@ -40,6 +42,8 @@ export const postService = {
     tags: string[];
     hanTu: Content;
     postType: string;
+    level:string,
+    seo:Seo
   }): Promise<void> => {
     const postRepository = myContainer.get<IPostRepository>(
       TYPES.IPostRepository
@@ -51,6 +55,9 @@ export const postService = {
       updateDateTime,
       tags,
       hanTu,
+      postType,
+      level,
+      seo
     });
     return post;
   },

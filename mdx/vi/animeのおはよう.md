@@ -1,8 +1,12 @@
 ---
+title: animeのおはよう
+description: animeのおはよう
+keywords: animeのおはよう
 mediaUrl: https://i.postimg.cc/V6XsMsp4/boy.png
 tags: anime basic
 updateDateTime: 2021-02-13
 postType: anime
+level: n5
 ---
 
 # animeのおはよう

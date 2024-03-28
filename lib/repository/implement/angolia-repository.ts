@@ -1,6 +1,6 @@
 import { injectable } from "inversify";
 
-import { PostDetailModel, PostBaseModel, Content } from "@/lib/models/model";
+import { PostDetailModel, PostBaseModel, Content, Seo } from "@/lib/models/model";
 import { IPostRepository } from "@/lib/repository/post-repository";
 
 const algoliasearch = require("algoliasearch");
@@ -15,10 +15,7 @@ export class AngoliaRepository implements IPostRepository {
     return indexAngolia.product.getObject(id)
   }
   addPost(post: any): Promise<void> {
-    return indexAngolia.product.saveObject(post,{
-      autoGenerateObjectIDIfNotExist: true
-      // Any other requestOptions
-    })
+    return indexAngolia.product.saveObject(post)
   }
   updateFromMdx({
     id,
@@ -27,7 +24,9 @@ export class AngoliaRepository implements IPostRepository {
     updateDateTime,
     tags,
     hanTu,
-    postType
+    postType,
+    level,
+    seo
   }: {
     id: string;
     mdxContent: Content;
@@ -36,6 +35,8 @@ export class AngoliaRepository implements IPostRepository {
     tags: string[];
     hanTu: Content;
     postType: string;
+    level:string,
+    seo:Seo
   }): Promise<void> {
     return indexAngolia.product.partialUpdateObject({
       mdxContent,
@@ -44,13 +45,21 @@ export class AngoliaRepository implements IPostRepository {
       objectID: id,
       _tags:tags,
       hanTu: hanTu,
-      postType: postType
+      postType: postType,
+      level:level,
+      seo
+    },{
+      createIfNotExists: true
+      // Any other requestOptions
     });
   }
   updateSort(postID: string, sort: number): Promise<void> {
     return indexAngolia.product.partialUpdateObject({
       sort: sort,
       objectID: postID
+    },{
+      createIfNotExists: true
+      // Any other requestOptions
     });
   }
 
