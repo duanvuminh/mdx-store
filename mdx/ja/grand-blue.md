@@ -4,7 +4,7 @@ description: Grand blue
 keywords: Grand blue anime
 mediaUrl: https://i.postimg.cc/hjBgjvPc/grand-blue.png
 updateDateTime: 2022-04-03
-tags: Grand blue
+tags: grand-blue
 postType: video
 level:
 video: https://firebasestorage.googleapis.com/v0/b/kyomo-1590f.appspot.com/o/grand%20blue.mp4?alt=media&token=2d891c99-649d-4506-ba02-b38c815cdbfe
