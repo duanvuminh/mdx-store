@@ -10,10 +10,11 @@ level:
 video: https://firebasestorage.googleapis.com/v0/b/kyomo-1590f.appspot.com/o/grand%20blue.mp4?alt=media&token=2d891c99-649d-4506-ba02-b38c815cdbfe
 ---
 
-# WEBVTT
+# Grand blue
+## WEBVTT
 0
 00:00:00.000 --> 00:00:03.000
-<v Test>[Grand blue]</v>
+Grand blue
 
 1
 00:00:04.000 --> 00:00:06.000
