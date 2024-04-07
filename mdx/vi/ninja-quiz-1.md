@@ -14,7 +14,7 @@ choices: [
   { word: 殺 , a: THÂN：bản thân@み, b: SÁT：giết@ころす, c: THUẬT：kĩ nghệ@じゅつ, d: b },
   { word: 襲 , a: TRỢ： giúp đỡ@たすける, b: NẠP：thu,cất@おさめる, c: TẬP：tấn công@おそう, d: c },
   { word: 巻 , a: THỔ：đất@つち, b: TIÊU：xoá@けす, c: QUYỂN：Cuốn tròn@まき, d: c },
-  { word: 里 , a: TRUY：đuổi theo@おう, b: LÍ：làng@さと, c: Thư：viết@しょ, d: c },
+  { word: 里 , a: TRUY：đuổi theo@おう, b: LÍ：làng@さと, c: Thư：viết@しょ, d: b },
   { word: 木 , a: PHƯỢC：buộc@しばる, b: MỘC：cây@き, c: NHẪN：lén lút@しのび, d: b },
   { word: 薬 , a: LẠC：rơi@おちる, b: ĐẢO：ngã@たおす, c: DƯỢC：thuốc@くすり, d: c },
   { word: 狙 , a: ĐẢO：ngã@たおす, b: THƯ：nhắm@ねらう, c: TRUY：đuổi theo@おう, d: b },
