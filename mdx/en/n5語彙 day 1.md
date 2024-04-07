@@ -1,6 +1,6 @@
 ---
 title: Jlpt n5 word list
-description: Jlpt n5 word list page1
+description: Jlpt n5 word list day 1
 keywords: n5 word
 mediaUrl: https://i.postimg.cc/JnLJBbNS/word.png
 updateDateTime: 2021-02-13

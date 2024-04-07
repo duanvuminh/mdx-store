@@ -1,6 +1,6 @@
 ---
-title: Jlpt n5 word list
-description: Jlpt n5 word list page1
+title: Danh sách từ vựng n5 ngày 1
+description: Danh sách từ vựng n5 ngày 1
 keywords: n5 word
 mediaUrl: https://i.postimg.cc/JnLJBbNS/word.png
 updateDateTime: 2021-02-13
@@ -10,7 +10,7 @@ postType: mean
 level: n5
 ---
 
-# Jlpt n5 word list 回,階,か月,月,側,キロ,位,グラム,個,語,歳,冊,時,時間,中,週間,人,台,さん
+# Danh sách từ vựng n5 ngày 1 回,階,か月,月,側,キロ,位,グラム,個,語,歳,冊,時,時間,中,週間,人,台,さん
 | word | Description | Mean | Example |
 | --- | --- | --- | --- |
 | かい | 回 | lần | １ヶ月に１回いなかへ帰ります |
