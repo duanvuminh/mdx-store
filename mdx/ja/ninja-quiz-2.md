@@ -2,7 +2,7 @@
 title: ninja kanji game
 description: ninja kanji game
 keywords: kanji game
-mediaUrl: https://i.postimg.cc/jqZ01JHP/one-to-four.png
+mediaUrl: https://i.postimg.cc/fRrNF1S1/kanji-quiz.png
 updateDateTime: 2024-4-3
 tags: ninja
 hanTu:
@@ -28,6 +28,6 @@ choices: [
   { word: 風 , a: perish@ほろぼす, b: figure@すがた, c: wind@かぜ, d: c },
   { word: 波 , a: convey@つたえる, b: kill@ころす, c: wave@なみ, d: c },
   { word: 動 , a: move@うごく, b:  disappear@けす, c: art@じゅつ, d: a },
-  { word: 渡 , a: wave@なみ, b: pass@わたる, c: attack@おそう, d: c }
+  { word: 渡 , a: wave@なみ, b: pass@わたる, c: attack@おそう, d: b }
   ]
 ---

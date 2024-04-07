@@ -28,6 +28,6 @@ choices: [
   { word: 風 , a: perish@ほろぼす, b: figure@すがた, c: wind@かぜ, d: c },
   { word: 波 , a: convey@つたえる, b: kill@ころす, c: wave@なみ, d: c },
   { word: 動 , a: move@うごく, b:  disappear@けす, c: art@じゅつ, d: a },
-  { word: 渡 , a: wave@なみ, b: pass@わたる, c: attack@おそう, d: c }
+  { word: 渡 , a: wave@なみ, b: pass@わたる, c: attack@おそう, d: b }
   ]
 ---

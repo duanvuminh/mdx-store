@@ -14,7 +14,7 @@ choices: [
   { word: 殺 , a: oneself@み, b: kill@ころす, c: art@じゅつ, d: b },
   { word: 襲 , a: help@たすける, b: cultivate@おさめる, c: attack@おそう, d: c },
   { word: 巻 , a: soil@つち, b: disable@けす, c: scroll@まき, d: c },
-  { word: 里 , a: chase@おう, b: village@さと, c: writing@しょ, d: c },
+  { word: 里 , a: chase@おう, b: village@さと, c: writing@しょ, d: b },
   { word: 木 , a: truss@しばる, b: tree@き, c: endurance@しのび, d: b },
   { word: 薬 , a: fall@おちる, b: topple@たおす, c: medicine@くすり, d: c },
   { word: 狙 , a: topple@たおす, b: aim@ねらう, c: chase@おう, d: b },

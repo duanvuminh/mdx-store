@@ -1,7 +1,7 @@
 ---
-title: Grand-blue
-description: Grand blue
-keywords: Grand blue anime
+title: Grand-blue 01 scene
+description: Grand blue 01 scene
+keywords: Grand blue anime scene
 mediaUrl: https://i.postimg.cc/hjBgjvPc/grand-blue.png
 updateDateTime: 2022-04-03
 tags: grand-blue
@@ -18,44 +18,44 @@ Grand blue
 
 1
 00:00:04.000 --> 00:00:06.000
-あれって伊織だよね
+That's Iori, right?
 
 2
 00:00:12.000 --> 00:00:13.000
-10年ぶりか…
+It's been 10 years…
 
 3
 00:00:20.500 --> 00:00:24.000
-だっしゃー！ナンボのもんじゃい！
+Let's drink！Who do you think you are！
 
 4
 00:00:24.000 --> 00:00:25.500
-やるじゃねえか伊織！
+Good job Iori！
 
 5
 00:00:25.600 --> 00:00:27.600
-３人抜きたあ恐れ入ったぜ！
+He passed three people, impressed!
 
 6
-00:00:28.000 --> 00:00:28.500
-早く負けて―
+00:00:27.600 --> 00:00:31.400
+Give up quickly!I want to show off my magnificence!
 
 7
-00:00:29.000 --> 00:00:31.000
-俺のご立派様をお披露目したいです！
+00:00:31.500 --> 00:00:32.500
+You talk big!
 
 8
-00:00:31.500 --> 00:00:34.000
-よく言うぜ！（寿）どうせつまようじだろ？
+00:00:33.000 --> 00:00:34.000
+just only a toothpick？
 
 9
-00:00:34.500 --> 00:00:37.000
-何人かかってこようとも俺のパンツは…
+00:00:34.100 --> 00:00:37.400
+Even if more than people my underpants is…
 
 10
 00:00:37.500 --> 00:00:39.000
-あっ千紗ちゃんおかえりなさい
+Well come back chisa
 
 11
 00:00:40.000 --> 00:00:41.000
-ただいま
+I'm back
