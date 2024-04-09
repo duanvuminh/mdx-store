@@ -54,7 +54,7 @@ Chỉ là cái tăm thoai？
 00:00:34.100 --> 00:00:37.400
 Cho dù bao nhiêu đứa nữa thì quần lót tao cũng…
 
-Chú thích ようとも
+Chú thích ようとも-dù sao chăng nữa
 
 10
 00:00:37.500 --> 00:00:39.000
