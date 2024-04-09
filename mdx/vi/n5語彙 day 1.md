@@ -10,7 +10,8 @@ postType: mean
 level: n5
 ---
 
-# Danh sách từ vựng n5 ngày 1 回,階,か月,月,側,キロ,位,グラム,個,語,歳,冊,時,時間,中,週間,人,台,さん
+# Danh sách từ vựng n5 ngày 1 
+## 回,階,か月,月,側,キロ,位,グラム,個,語,歳,冊,時,時間,中,週間,人,台,さん
 | word | Description | Mean | Example |
 | --- | --- | --- | --- |
 | かい | 回 | lần | １ヶ月に１回いなかへ帰ります |
