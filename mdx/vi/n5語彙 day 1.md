@@ -12,11 +12,11 @@ level: n5
 
 # Danh sách từ vựng n5 ngày 1 
 ## 回,階,か月,月,側,キロ,位,グラム,個,語,歳,冊,時,時間,中,週間,人,台,さん
-| word | Description | Mean | Example |
+| word | kanji | Mean | Example&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 | --- | --- | --- | --- |
 | かい | 回 | lần | １ヶ月に１回いなかへ帰ります |
 | かい | 階 | tầng | おてあらいは３階です |
-| かげつ | 箇月／か月 | tháng(đếm) | ３ヶ月日本語をべんきょうしました |
+| かげつ | 箇月<br/>か月 | tháng<br/>(đếm) | ３ヶ月日本語をべんきょうしました |
 | がつ | 月 | tháng | わたしのたんじょうびは５月５日です |
 | がわ | 側 | phía | 右がわに学校があります |
 | キロ | - | kilo | うちから会社まで３キロメートルくらいです |
