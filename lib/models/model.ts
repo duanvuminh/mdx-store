@@ -28,7 +28,7 @@ export interface Content {
 }
 
 export interface Seo {
-  title: string;
-  description: string;
-  keywords: string[];
+  title: Content;
+  description: Content;
+  keywords: Content;
 }

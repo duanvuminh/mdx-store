@@ -24,7 +24,7 @@ export function KUpdatePosts() {
         ja: await mdxService.readMdx({ content: jaCt }),
       };
       const onlyUnique = (value: string, index: number, array: string[]) => {
-        return array.indexOf(value) === index && (value.trim()!= "");
+        return array.indexOf(value) === index && value.trim() != "";
       };
       const tags = [
         ...(metadata.en.frontmatter.tags?.split(",") ?? []),
@@ -59,21 +59,21 @@ export function KUpdatePosts() {
         ja: jaCt,
       };
 
-      const title = [
-        metadata.en.frontmatter.title,
-        metadata.ja.frontmatter.title,
-        metadata.vi.frontmatter.title,
-      ].filter(onlyUnique).toString();
-      const description = [
-        metadata.en.frontmatter.description,
-        metadata.ja.frontmatter.description,
-        metadata.vi.frontmatter.description,
-      ].filter(onlyUnique).toString();
-      const keywords = [
-        ...metadata.en.frontmatter.keywords.split(","),
-        ...metadata.ja.frontmatter.keywords.split(","),
-        ...metadata.vi.frontmatter.keywords.split(","),
-      ].filter(onlyUnique);
+      const title = {
+        en: metadata.en.frontmatter.title,
+        ja: metadata.ja.frontmatter.title,
+        vi: metadata.vi.frontmatter.title,
+      };
+      const description = {
+        en: metadata.en.frontmatter.description,
+        ja: metadata.ja.frontmatter.description,
+        vi: metadata.vi.frontmatter.description,
+      }
+      const keywords = {
+        en: metadata.en.frontmatter.keywords,
+        ja: metadata.ja.frontmatter.keywords,
+        vi: metadata.vi.frontmatter.keywords,
+      }
       const seo: Seo = {
         title: title,
         description: description,
