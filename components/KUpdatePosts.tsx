@@ -15,9 +15,9 @@ export function KUpdatePosts() {
     for (let index = 0; index < postIds.length; index++) {
       const id = postIds[index];
       //lay file content
-      const enCt = fileService.getContent("en", id);
-      const viCt = fileService.getContent("vi", id);
-      const jaCt = fileService.getContent("ja", id);
+      const enCt = fileService.getContent("en", id) ?? "";
+      const viCt = fileService.getContent("vi", id) ?? "";
+      const jaCt = fileService.getContent("ja", id) ?? "";
       const metadata = {
         en: await mdxService.readMdx({ content: enCt }),
         vi: await mdxService.readMdx({ content: viCt }),
@@ -68,12 +68,12 @@ export function KUpdatePosts() {
         en: metadata.en.frontmatter.description,
         ja: metadata.ja.frontmatter.description,
         vi: metadata.vi.frontmatter.description,
-      }
+      };
       const keywords = {
         en: metadata.en.frontmatter.keywords,
         ja: metadata.ja.frontmatter.keywords,
         vi: metadata.vi.frontmatter.keywords,
-      }
+      };
       const seo: Seo = {
         title: title,
         description: description,
