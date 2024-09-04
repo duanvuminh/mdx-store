@@ -2,7 +2,7 @@
 title: 日本語アルファベット
 description: 日本語アルファベット
 keyws: 日本語アルファベット
-mediaUrl: https://www.nhk.or.jp/lesson/assets/images/letters/detail/hira/a.png
+mediaUrl: https://i.postimg.cc/QM59YXRM/hiragana.webp
 updateDateTime: 2024-09-02
 tags: 日本語アルファベット
 postType: mean

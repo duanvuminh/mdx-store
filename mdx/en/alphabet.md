@@ -2,7 +2,7 @@
 title: Japanese alphabet
 description: Japanese alphabet
 keywords: Japanese alphabet
-mediaUrl: https://www.nhk.or.jp/lesson/assets/images/letters/detail/hira/a.png
+mediaUrl: https://i.postimg.cc/QM59YXRM/hiragana.webp
 updateDateTime: 2024-09-02
 tags: Japanese alphabet
 postType: mean

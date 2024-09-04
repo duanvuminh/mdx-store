@@ -2,7 +2,7 @@
 title: Bảng chữ cái tiếng nhật
 description: Bảng chữ cái tiếng nhật
 keywords: Bảng chữ cái tiếng nhật
-mediaUrl: https://www.nhk.or.jp/lesson/assets/images/letters/detail/hira/a.png
+mediaUrl: https://i.postimg.cc/QM59YXRM/hiragana.webp
 updateDateTime: 2024-09-02
 tags: Bảng chữ cái tiếng nhật
 postType: mean
