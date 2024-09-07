@@ -25,7 +25,7 @@ level: n5
 | <T w="わ,wa"/> |- | <T w="ん,n"/> | - | <T w="を,wo"/> |
 | <T w="が,ga"/> | <T w="ぎ,gi"/> | <T w="ぐ,gu"/> | <T w="げ,ge"/> | <T w="ご,go"/> |
 | <T w="ざ,za"/> | <T w="じ,ji"/> | <T w="ず,zu"/> | <T w="ぜ,ze"/> | <T w="ぞ,zo"/> |
-| <T w="だ,sa"/> | <T w="ぢ,ji,ji2"/> | <T w="づ,du,zu2"/> | <T w="で,de"/> | <T w="ど,do"/> |
+| <T w="だ,da"/> | <T w="ぢ,ji,ji2"/> | <T w="づ,du,zu2"/> | <T w="で,de"/> | <T w="ど,do"/> |
 | <T w="ば, ba"/> | <T w="び,bi"/> | <T w="ぶ,bu"/> | <T w="べ,be"/> | <T w="ぼ,bo"/> |
 | <T w="ぱ,pa"/> | <T w="ぴ,pi"/> | <T w="ぷ,pu"/> | <T w="ぺ,pe"/> | <T w="ぽ,po"/> |
 | <T w="きゃ, kya"/> | - | <T w="きゅ,kyu"/> | - | <T w="きょ,kyo"/> |
